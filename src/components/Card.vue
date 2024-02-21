@@ -4,7 +4,7 @@
       <span v-if="showQuestion">
         {{ card.question }}
       </span>
-      <span v-else>{{ card.correct_answer }}</span>
+      <span v-else class="answer">{{ card.correct_answer }}</span>
     </div>
   </div>
 </template>
@@ -58,10 +58,15 @@ export default defineComponent({
 .card:hover {
   transform: scale(1.05);
 }
+
+.card .answer {
+  color: #007bff;
+  font-weight: bold;
+}
 @media (max-width: 600px) {
   .card {
     margin: 10px 0;
-    width: 90%;
+    width: auto;
     align-self: center;
     height: auto;
   }

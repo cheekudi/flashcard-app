@@ -34,4 +34,12 @@ export default defineComponent({
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+@media (max-width: 600px) {
+  .card-button {
+    font-size: 14px;
+    width: 100px;
+    padding: 10px 10px;
+  }
+}
 </style>
