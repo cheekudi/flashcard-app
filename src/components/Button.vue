@@ -29,4 +29,9 @@ export default defineComponent({
 .card-button:hover {
   background-color: #0056b3;
 }
+
+.card-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 </style>

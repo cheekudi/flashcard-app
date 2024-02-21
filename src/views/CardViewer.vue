@@ -9,11 +9,17 @@
       </div>
 
       <div class="footer">
-        <Button @click="goToPreviousCard"> ← Previous </Button>
+        <Button @click="goToPreviousCard" :disabled="currentCardIndex == 0">
+          ← Previous
+        </Button>
         <span class="card-indicator"
-          >Card {{ currentCardIndex + 1 }} of {{ totalCards - 1 }}</span
+          >Card {{ currentCardIndex + 1 }} of {{ totalCards }}</span
         >
-        <Button @click="goToNextCard">Next →</Button>
+        <Button
+          @click="goToNextCard"
+          :disabled="currentCardIndex == totalCards - 1"
+          >Next →</Button
+        >
       </div>
     </div>
   </div>
@@ -31,7 +37,7 @@ export default defineComponent({
   setup() {
     const store = useStore();
     onMounted(() => {
-      store.fetchCards(26);
+      store.fetchCards(25);
     });
 
     const { currentCard } = storeToRefs(store);
