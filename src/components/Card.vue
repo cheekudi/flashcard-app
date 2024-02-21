@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, watch } from "vue";
 import type { Card } from "@/stores/card-data/types";
 
 export default defineComponent({
@@ -23,10 +23,17 @@ export default defineComponent({
   setup(props) {
     const showQuestion = ref(true);
 
+    // Reset to show question whenever the card changes
+    watch(
+      () => props.card,
+      () => {
+        showQuestion.value = true;
+      }
+    );
+
     function toggleDisplay() {
       showQuestion.value = !showQuestion.value;
     }
-
     return { showQuestion, toggleDisplay };
   },
 });

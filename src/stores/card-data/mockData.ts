@@ -5,13 +5,9 @@ export const mockData = [
     difficulty: "hard",
     category: "Science: Computers",
     question:
-      "According to DeMorgan&#039;s Theorem, the Boolean expression (AB)&#039; is equivalent to:",
-    correct_answer: "A&#039; + B&#039;",
-    incorrect_answers: [
-      "A&#039;B + B&#039;A",
-      "A&#039;B&#039;",
-      "AB&#039; + AB",
-    ],
+      "According to DeMorgan's Theorem, the Boolean expression (AB)' is equivalent to:",
+    correct_answer: "A' + B'",
+    incorrect_answers: ["A'B + B'A", "A'B'", "AB' + AB"],
   },
   {
     type: "multiple",
@@ -124,7 +120,7 @@ export const mockData = [
     type: "multiple",
     difficulty: "hard",
     category: "Science: Computers",
-    question: "The acronym &quot;RIP&quot; stands for which of these?",
+    question: "The acronym 'RIP' stands for which of these?",
     correct_answer: "Routing Information Protocol",
     incorrect_answers: [
       "Runtime Instance Processes",
@@ -137,7 +133,7 @@ export const mockData = [
     difficulty: "hard",
     category: "Science: Computers",
     question:
-      "Released in 2001, the first edition of Apple&#039;s Mac OS X operating system (version 10.0) was given what animal code name?",
+      "Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?",
     correct_answer: "Cheetah",
     incorrect_answers: ["Puma", "Tiger", "Leopard"],
   },
@@ -179,7 +175,7 @@ export const mockData = [
     type: "multiple",
     difficulty: "hard",
     category: "Science: Computers",
-    question: "Who invented the &quot;Spanning Tree Protocol&quot;?",
+    question: "Who invented the 'Spanning Tree Protocol'?",
     correct_answer: "Radia Perlman",
     incorrect_answers: ["Paul Vixie", "Vint Cerf", "Michael Roberts"],
   },
@@ -234,8 +230,7 @@ export const mockData = [
     type: "multiple",
     difficulty: "hard",
     category: "Science: Computers",
-    question:
-      "What was the first company to use the term &quot;Golden Master&quot;?",
+    question: "What was the first company to use the term 'Golden Master'?",
     correct_answer: "Apple",
     incorrect_answers: ["IBM", "Microsoft", "Google"],
   },
