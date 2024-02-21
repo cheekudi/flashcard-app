@@ -52,6 +52,8 @@ export default defineComponent({
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  width: 400px;
+  height: 100px;
 }
 .card:hover {
   transform: scale(1.05);
@@ -61,6 +63,7 @@ export default defineComponent({
     margin: 10px 0;
     width: 90%;
     align-self: center;
+    height: auto;
   }
 }
 </style>

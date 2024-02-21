@@ -71,8 +71,6 @@ h1 {
   text-align: center;
 }
 .viewer-container {
-  width: 400px;
-  height: 200px;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
