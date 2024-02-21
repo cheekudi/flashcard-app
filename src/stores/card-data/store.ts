@@ -6,7 +6,7 @@ The cards property is an array of Card objects, and the currentCardIndex propert
 import { defineStore } from "pinia";
 import { getQuestions } from "./apiCalls";
 import type { Card } from "./types";
-import { mockData } from "./mockdata";
+import { mockData } from "./mockData";
 
 export const useStore = defineStore({
   id: "flashcard",
