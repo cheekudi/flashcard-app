@@ -7,7 +7,7 @@ import axios from "axios";
 import { showError } from "./utils";
 
 const api = axios.create({
-  baseURL: "/api/api.php",
+  baseURL: "https://opentdb.com/api.php",
 });
 
 api.interceptors.response.use(
